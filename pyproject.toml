@@ -8,12 +8,11 @@ version = "3.0.0"
 description = "Examples for LibreOffice python"
 license = "MIT"
 readme = "README.md"
-authors = [
-    ":Barry-Thomas-Paul: Moss <bigbytetech@gmail.com>"
-]
+authors = [":Barry-Thomas-Paul: Moss <bigbytetech@gmail.com>"]
 homepage = "https://github.com/Amourspirit/python-ooouno-ex"
 documentation = "https://github.com/Amourspirit/python-ooouno-ex"
 repository = "https://github.com/Amourspirit/python-ooouno-ex"
+package-mode = false
 
 
 [tool.poetry.dependencies]
@@ -35,4 +34,27 @@ pdbpp = "^0.10.3"
 debugpy = "^1.8.1"
 
 [tool.ruff]
-ignore=["E501"]
+ignore = ["E501"]
+
+[tool.basedpyright]
+reportMissingModuleSource = false
+executionEnvironments = [
+    { root = "macro", extraPaths = [
+        ".venv/lib/python3.11/site-packages",
+    ] },
+    { root = "ex", extraPaths = [
+        ".venv/lib/python3.11/site-packages",
+    ] },
+    { root = "src", extraPaths = [
+        ".venv/lib/python3.11/site-packages",
+    ] },
+    { root = "checks", extraPaths = [
+        ".venv/lib/python3.11/site-packages",
+    ] },
+    { root = "test", extraPaths = [
+        ".venv/lib/python3.11/site-packages",
+    ] },
+]
+
+[tool.mypy]
+disable_error_code = ["import-untyped"]
