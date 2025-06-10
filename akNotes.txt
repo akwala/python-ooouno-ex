@@ -1,0 +1,53 @@
+[2024-06-09]
+Synced fork with the parent repo.
+
+[2024-01-19]
+# Followed install instructions for Linux in top-level README.md
+#+  (https://github.com/Amourspirit/python-ooouno-ex#linux)
+
+:) [aslam@HeluKumu] /var/ak/dev/workspace/github/_forks/python-ooouno-ex
+$ poetry install
+Installing dependencies from lock file
+
+Package operations: 20 installs, 2 updates, 0 removals
+
+  - Installing attrs (23.2.0)
+  - Installing pyrepl (0.9.0)
+  - Downgrading types-unopy (2.0.0 -> 1.2.3)
+  - Installing click (8.1.7)
+  - Installing fancycompleter (0.9.1)
+  - Installing pathspec (0.11.2)
+  - Installing packaging (23.2)
+  - Installing mypy-extensions (1.0.0)
+  - Installing platformdirs (4.0.0)
+  - Downgrading pydantic (1.10.21 -> 1.10.13)
+  - Installing pygments (2.17.2)
+  - Installing singledispatch (4.1.0)
+  - Installing wmctrl (0.5)
+  - Installing black (23.11.0)
+  - Installing debugpy (1.8.1)
+  - Installing types-scriptforge (7.6)
+  - Installing types-access2base (1.0.2)
+  - Installing oooenv (0.2.4)
+  - Installing pdbpp (0.10.3)
+  - Installing unotools (0.3.3)
+  - Installing verr (1.1.2)
+  - Installing kwargshelper (2.7.1)
+
+Installing the current project: ooouno-ex (3.0.0)
+Error: The current project could not be installed: No file/folder found for package ooouno-ex
+If you do not want to install the current project use --no-root.
+If you want to use Poetry only for dependency management but not for packaging, you can disable package mode by setting package-mode = false in your pyproject.toml file.
+If you did intend to install the current project, you may need to set `packages` in your pyproject.toml file.
+
+(venv_lo)
+:( [aslam@HeluKumu] /var/ak/dev/workspace/github/_forks/python-ooouno-ex
+$ poetry install --no-root
+Installing dependencies from lock file
+
+No dependencies to install or update
+(venv_lo)
+:) [aslam@HeluKumu] /var/ak/dev/workspace/github/_forks/python-ooouno-ex
+$ oooenv cmd-link -a
+Created system link: /usr/lib/python3/dist-packages/uno.py -> /var/ak/dev/py/venv_lo/lib/python3.11/site-packages/uno.py
+Created system link: /usr/lib/python3/dist-packages/unohelper.py -> /var/ak/dev/py/venv_lo/lib/python3.11/site-packages/unohelper.py
