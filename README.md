@@ -93,6 +93,7 @@ Thereafter, the `-t` switch tells the command to toggle between the main virtual
 ```ps
 oooenv env -t
 ```
+
 To check if the virtual environment is set for LibreOffice use the `-u` switch.
 
 ```ps
@@ -132,8 +133,6 @@ Type "help", "copyright", "credits" or "license" for more information.
 It is possible to debug macros when running in the Codesapce (Development container).
 
 See [Debug Macros in Vs Code](https://github.com/Amourspirit/live-libreoffice-python/wiki/Debug-Macros-in-Vs-Code) Guide for [Live LibreOffice Python]. The guide uses Port `3002` This container uses Port `3004`.
-
-
 
 [ooouno]: https://pypi.org/project/ooouno/
 [oooscript]: https://pypi.org/project/oooscript/
