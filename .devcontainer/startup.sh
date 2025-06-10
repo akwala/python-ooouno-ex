@@ -1,4 +1,4 @@
-#/bin/sh
+#!/bin/sh
 
 # This file is run when the container is started.
 # If you need custom initialization, add them here.
